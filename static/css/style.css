@@ -1,3 +1,21 @@
-p, h2, h3 {
-  font-family: sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Fugaz+One|IBM+Plex+Sans');
+
+p, h2, h3, a {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.header {
+  position: absolute;
+  width: auto;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  margin-left: -(width/2);
+  margin-top: -(height/2);
+}
+
+.navbtn {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
