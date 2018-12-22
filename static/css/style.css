@@ -9,13 +9,13 @@ p, h2, h3, a {
   width: auto;
   height: auto;
   left: 50%;
-  top: 50%;
   margin-left: -(width/2);
-  margin-top: -(height/2);
 }
 
 .navbtn {
   position: absolute;
   left: 0;
   top: 0;
+  padding-left: 10px;
+  padding-top: 10px;
 }
