@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fugaz+One|IBM+Plex+Sans');
+@import url('https://fonts.googleapis.com/css?family=Shrikhand|Arvo');
 
 body {
   display: flex;
@@ -6,16 +6,18 @@ body {
   justify-content: center;
 }
 
-p, h2, h3, a {
-  font-family: "IBM Plex Sans", sans-serif;
+p, a {
+  font-family: "Arvo", serif;
+}
+
+h2, h3 {
+  font-family: "Shrikhand", cursive;
 }
 
 .header {
   position: absolute;
   width: auto;
   height: auto;
-  left: 50%;
-  margin-left: -(width/2);
   margin-top: 10px;
 }
 
