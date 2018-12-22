@@ -29,9 +29,9 @@ p, h2, h3, a {
 
 .content {
   position: absolute;
-  height: 800px;
+  height: auto;
   top: 50%;
-  margin-top: -400px;
+  margin-top: -(height/2);
   text-align: center;
   width: 800px;
 }
