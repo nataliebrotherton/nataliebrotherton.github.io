@@ -43,7 +43,7 @@ h2, h3 {
 }
 
 .content {
-  position: relative;
+  position: absolute;
   height: auto;
   top: 50%;
   margin-top: -(height/2);
