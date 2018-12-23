@@ -19,10 +19,11 @@ h2, h3 {
   width: auto;
   height: auto;
   margin-top: 10px;
+  margin-left: 20%;
 }
 
 .header h3 {
-  font-size: 20px;
+  font-size: 70px;
 }
 
 .navbtn {
