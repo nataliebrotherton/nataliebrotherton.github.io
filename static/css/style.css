@@ -23,7 +23,11 @@ h2, h3 {
 }
 
 .header h3 {
-  font-size: 70px;
+  font-size: 90px;
+}
+
+.header h3:last-child {
+  margin-left: 10%;
 }
 
 .navbtn {
