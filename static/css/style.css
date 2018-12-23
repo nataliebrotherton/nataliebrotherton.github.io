@@ -52,7 +52,12 @@ h2, h3 {
   margin-left: -7%;
   text-align: center;
   width: 800px;
-  border: solid;
+}
+
+.content p {
+  line-height: 4;
+  font-size: 20px;
+  text-align: right;
 }
 
 .content h2 {
@@ -60,5 +65,5 @@ h2, h3 {
   height: auto;
   margin-top: -20%;
   font-size: 90px;
-  margin-left: -5%;
+  margin-left: -25%;
 }
