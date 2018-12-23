@@ -27,7 +27,7 @@ h2, h3 {
 }
 
 .header h3:first-child {
-  margin-top: 40%;
+  /* margin-top: 40%; */
 }
 
 .header h3:last-child {
@@ -48,7 +48,7 @@ h2, h3 {
   height: auto;
   top: 50%;
   margin-top: -(height/2);
-  margin-left: 30%;
+  margin-left: 10%;
   text-align: center;
   width: 800px;
   border: solid;
