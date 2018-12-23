@@ -26,6 +26,10 @@ h2, h3 {
   font-size: 90px;
 }
 
+.header h3:first-child {
+  margin-top: 20%;
+}
+
 .header h3:last-child {
   margin-left: 10%;
 }
