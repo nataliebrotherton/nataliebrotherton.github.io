@@ -54,3 +54,11 @@ h2, h3 {
   width: 800px;
   border: solid;
 }
+
+.content h2 {
+  position: absolute;
+  height: auto;
+  margin-top: 40%;
+  font-size: 40px;
+  margin-left: -5%;
+}
