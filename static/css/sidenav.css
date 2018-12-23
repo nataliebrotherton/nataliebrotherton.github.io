@@ -13,6 +13,10 @@
   overflow-x: hidden;
   padding-top: 60px;
   transition: .5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes AnimationName {
@@ -22,9 +26,9 @@
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 10px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 50px;
   color: #FFF7D4;
   display: block;
   transition: .3s;
