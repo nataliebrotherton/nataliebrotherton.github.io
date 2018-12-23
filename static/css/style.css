@@ -21,6 +21,10 @@ h2, h3 {
   margin-top: 10px;
 }
 
+.header h3 {
+  font-size: 20px;
+}
+
 .navbtn {
   position: absolute;
   left: 0;
@@ -36,4 +40,5 @@ h2, h3 {
   margin-top: -(height/2);
   text-align: center;
   width: 800px;
+  border: solid;
 }
