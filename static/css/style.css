@@ -48,7 +48,7 @@ h2, h3 {
   height: auto;
   top: 50%;
   margin-top: -(height/2);
-  margin-left: 10%;
+  margin-left: -10%;
   text-align: center;
   width: 800px;
   border: solid;
