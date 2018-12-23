@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Shrikhand|Arvo');
+@import url('https://fonts.googleapis.com/css?family=Shrikhand|Karla');
 
 body {
   display: flex;
@@ -8,7 +8,7 @@ body {
 }
 
 p, a {
-  font-family: "Arvo", serif;
+  font-family: "Karla", serif;
 }
 
 h2, h3 {
