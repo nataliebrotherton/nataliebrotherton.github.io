@@ -1,9 +1,9 @@
 function togNav() {
-  var nav = document.getElementById("sidenav");
-  if (nav.style.width == '100%') {
-    nav.style.width = '0';
+  var x = document.getElementById("sidenav");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
   } else {
-    nav.style.width = "200%";
+    x.style.display = "none";
   }
 }
 

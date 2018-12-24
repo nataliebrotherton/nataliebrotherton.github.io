@@ -9,7 +9,7 @@
   overflow: hidden;
   padding-top: 13px;
   transition: .5s;
-  display: flex;
+  display: none;
   flex-direction: row;
 }
 
