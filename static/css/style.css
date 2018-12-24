@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Shrikhand|Karla');
+@import url('https://fonts.googleapis.com/css?family=Shrikhand|PT+Mono');
 
 body {
   display: flex;
@@ -17,7 +17,7 @@ body {
 }
 
 p, a {
-  font-family: "Karla", serif;
+  font-family: "PT Mono", serif;
 }
 
 h2, h3 {
@@ -28,21 +28,20 @@ h2, h3 {
   position: absolute;
   width: auto;
   height: auto;
-  margin-top: 7%;
-  margin-left: 20%;
+  margin-top: 40%;
 }
 
 .header h3 {
-  font-size: 170px;
+  font-size: 300px;
+  color: white;
 }
 
 .header h3:first-child {
-  margin-left: 0%;
+  margin-left: 10%;
 }
 
 .header h3:last-child {
-  margin-left: 10%;
-  margin-top: -30%
+  margin-top: -25%
 }
 
 .navbtn {
@@ -51,6 +50,7 @@ h2, h3 {
   top: 0;
   padding-left: 15px;
   padding-top: 10px;
+  color: white;
 }
 
 .content {
