@@ -64,7 +64,7 @@ h2, h3 {
 }
 
 .content p, .content a {
-  line-height: 4;
+  line-height: 1;
   font-size: 20px;
   text-align: right;
 }

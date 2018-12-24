@@ -1,9 +1,9 @@
-function nav_bar() {
-  var nav_width = document.getElementById("sidenav").style.width;
-  if (nav_width === "0") {
-    openNav();
+function togNav() {
+  var nav = document.getElementById("sidenav");
+  if (nav.style.width == '100%') {
+    nav.style.width = '0';
   } else {
-    closeNav();
+    nav.style.width = "200px";
   }
 }
 
