@@ -33,11 +33,6 @@
   color: white;
 }
 
-.sidenav .closebtn {
-  position: absolute;
-  font-size: 36px;
-}
-
 .content {
   transition: margin-left .5s;
   padding: 20px;
