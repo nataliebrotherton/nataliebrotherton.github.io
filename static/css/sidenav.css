@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Fugaz+One|IBM+Plex+Sans');
 
 .sidenav {
-  width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
