@@ -1,8 +1,5 @@
-function togNav() {
-  var x = document.getElementById("sidenav");
-  if (x.style.display === "none") {
-    x.style.display = "flex";
-  } else {
-    x.style.display = "none";
-  }
-}
+$(document).ready(function() {
+  $(".navbtn").click(function(){
+    $("#sidenav").slideToggle("fast");
+  });
+});

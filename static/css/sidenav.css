@@ -4,20 +4,22 @@
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 55px;
-  overflow: hidden;
+  left: 15px;
+  top: 150px;
   padding-top: 13px;
   transition: .5s;
   display: none;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .sidenav a {
-  padding: 0px 0px 0px 0px;
+  padding: 0px 0px 130px 0px;
   text-decoration: none;
   font-size: 30px;
   display: block;
   transition: .3s;
+  transform: rotate(-90deg);
+  transform-origin: left top 0;
 }
 
 .sidenav a:first-child {
