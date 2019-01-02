@@ -21,6 +21,7 @@
 .sidenav div {
   transform: rotate(-90deg);
   transform-origin: left top 0;
+  width: 100px;
 }
 
 .nav:hover {
