@@ -56,11 +56,11 @@ $(document).ready(function() {
       "Ink, graphite, colored pencil"
     ];
     $(".overlay").css({
-      'width' : $(this).css('width');
-      'height' : $(this).css('height');
-      'top' : $(this).position().top;
-      'left' : $(this).position().left;
-      'opacity' : '0.6';
+      'width' : $(this).css('width'),
+      'height' : $(this).css('height'),
+      'top' : $(this).position().top,
+      'left' : $(this).position().left,
+      'opacity' : '0.6'
     });
   });
 });
