@@ -8,6 +8,7 @@ body {
   background: linear-gradient(270deg, #FFF7D4, #D4F0FF, #EFFFD4);
   background-size: 400% 400%;
   animation: AnimationName 30s ease infinite;
+  overflow-y: scroll;
 }
 
 @keyframes AnimationName {
@@ -87,5 +88,9 @@ h2, h3 {
 }
 
 .works {
-  overflow-y: scroll;
+  z-index: 1;
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }

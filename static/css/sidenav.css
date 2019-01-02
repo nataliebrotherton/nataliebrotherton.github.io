@@ -4,10 +4,9 @@
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 15px;
-  top: 150px;
+  left: 12px;
+  top: 145px;
   padding-top: 13px;
-  transition: .5s;
   display: none;
   flex-direction: column;
 }
@@ -17,17 +16,10 @@
   text-decoration: none;
   font-size: 30px;
   display: block;
-  transition: .3s;
   transform: rotate(-90deg);
   transform-origin: left top 0;
-}
-
-.sidenav a:first-child {
-  transition: .3s;
-}
-
-.sidenav a:nth-child(2) {
-  transition: .4s;
+  color: black;
+  overflow: hidden;
 }
 
 .sidenav a:hover {
@@ -35,7 +27,6 @@
 }
 
 .content {
-  transition: margin-left .5s;
   padding: 20px;
 }
 
