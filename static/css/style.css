@@ -105,3 +105,10 @@ h2, h3 {
 .works img:last-child {
   padding-bottom: 50px;
 }
+
+.overlay {
+  position: fixed;
+  z-index: 2;
+  background-color: black;
+  opacity: 0;
+}
