@@ -94,3 +94,14 @@ h2, h3 {
 ::-webkit-scrollbar {
   width: 0;
 }
+
+.works img {
+  padding-top: 70px;
+}
+
+.works img:first-child {
+  padding-top: 50px;
+}
+.works img:last-child {
+  padding-bottom: 50px;
+}
