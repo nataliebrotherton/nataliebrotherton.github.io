@@ -1,12 +1,13 @@
-var folder = "/static/assets/portfolio";
-
+var dir = "/static/assets/portfolio";
+var fileextension = ".jpg";
 $.ajax({
-    url : folder,
+    //This will retrieve the contents of the folder if the folder is configured as 'browsable'
+    url: dir,
     success: function (data) {
-        $(data).find("a").attr("href", function (i, val) {
-            if( val.match(/\.(jpe?g|png|gif)$/) ) {
-                $(".works").append( "<img src='"+ folder + val +"'>" );
-            }
+        //List all .jpg file names in the page
+        $(data).find("a:contains(" + fileextension + ")").each(function () {
+            var filename = this.href.replace(window.location.host, "").replace("https://", "");
+            $(".works").append("<img src='" + dir + filename + "'>");
         });
     }
 });
