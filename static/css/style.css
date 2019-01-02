@@ -85,3 +85,7 @@ h2, h3 {
   font-size: 90px;
   margin-left: -25%;
 }
+
+.works {
+  overflow-y: scroll;
+}
