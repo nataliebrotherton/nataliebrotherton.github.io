@@ -51,7 +51,9 @@ $(document).ready(function() {
   }
 
   $(".piece").mouseenter(function() {
-    $(".overlay").css({
+    var i = $(this).attr('id');
+    var selector = ".container" + i;
+    $(selector).css({
       'width' : $(this).css('width'),
       'height' : $(this).css('height'),
       'top' : $(this).position().top,
@@ -60,7 +62,9 @@ $(document).ready(function() {
     });
   });
   $(".piece").mouseleave(function() {
-    $(".overlay").css({
+    var i = $(this).attr('id');
+    var selector = ".container" + i;
+    $(selector).css({
       'width' : $(this).css('width'),
       'height' : $(this).css('height'),
       'top' : $(this).position().top,
