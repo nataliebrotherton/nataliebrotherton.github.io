@@ -54,7 +54,7 @@ $(document).ready(function() {
     var i = $(this).attr('id');
     $(this).before('<div class="overlay"/>')
     $(".overlay").css({
-      'background-color' : 'black';
+      'background-color' : 'black',
       'width' : $(this).css('width'),
       'height' : $(this).css('height'),
       'opacity' : '0.6'
