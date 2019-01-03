@@ -52,23 +52,17 @@ $(document).ready(function() {
 
   $(".piece").mouseenter(function() {
     var i = $(this).attr('id');
-    var selector = ".container" + i;
-    $(selector).css({
+    $(this).before('<div class="overlay"/>')
+    $(".overlay").css({
+      'background-color' : 'black';
       'width' : $(this).css('width'),
       'height' : $(this).css('height'),
-      'top' : $(this).position().top,
-      'left' : $(this).position().left,
       'opacity' : '0.6'
     });
   });
   $(".piece").mouseleave(function() {
     var i = $(this).attr('id');
-    var selector = ".container" + i;
-    $(selector).css({
-      'width' : $(this).css('width'),
-      'height' : $(this).css('height'),
-      'top' : $(this).position().top,
-      'left' : $(this).position().left,
+    $(".overlay").css({
       'opacity' : '0'
     });
   });
