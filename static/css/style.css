@@ -112,3 +112,15 @@ h2, h3 {
   background-color: black;
   opacity: 0;
 }
+
+.content img:nth-child(2), .content img:last-child {
+  height: 500px;
+}
+
+.content img {
+  padding-top: 70px;
+}
+
+.content img:last-child {
+  padding-bottom: 100px;
+}

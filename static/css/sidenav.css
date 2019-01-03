@@ -3,25 +3,23 @@
 .sidenav {
   position: fixed;
   z-index: 1;
-  left: 12px;
-  top: 145px;
+  left: 0px;
+  top: 315px;
   padding-top: 13px;
   display: none;
-  flex-direction: column;
+  flex-direction: row;
+  transform: rotate(-90deg);
+  transform-origin: left top 0;
 }
 
 .sidenav a {
   padding: 0px 0px 130px 0px;
   text-decoration: none;
   font-size: 30px;
-  display: block;
-  color: black;
+  color: #000000;
 }
 
-.sidenav div {
-  transform: rotate(-90deg);
-  transform-origin: left top 0;
-  width: 100px;
+.sidenav span {
 }
 
 .nav:hover {
