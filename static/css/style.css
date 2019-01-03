@@ -152,11 +152,12 @@ img.stamps:hover, img.stock:hover, img.jamquiz:hover {
 
 #stock p {
   bottom: -200px;
-  right: 0px;
+  right: 30px;
   width: 555px;
 }
 
 #stock p:first-child {
+  font-weight: bold;
   bottom: -160px;
 }
 
