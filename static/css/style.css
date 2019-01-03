@@ -141,10 +141,6 @@ img.stamps:hover, img.stock:hover, img.jamquiz:hover {
   font-size: 15px;
 }
 
-.project-container:hover p {
-  opacity: 1;
-}
-
 #stamps p {
   top: 100px;
   left: 120px;
