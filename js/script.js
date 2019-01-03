@@ -42,7 +42,7 @@ $(document).ready(function() {
   for (i = 0; i < contentArray.length; i++) {
     filename = dir + i + ".jpg";
     contentArray[i][2] = filename;
-    $(".works").prepend('<div class="container'+ i +'" />');
+    $("div.works").prepend('<div class="container'+ i +'" />');
     var img = $('<img />').attr({
             'id': i,
             'class': 'piece',
