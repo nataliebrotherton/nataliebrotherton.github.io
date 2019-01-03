@@ -125,12 +125,12 @@ h2, h3 {
   padding-bottom: 100px;
 }
 
-.stamps img, img.stock, img.jamquiz {
+img.stamps:hover, img.stock, img.jamquiz {
   opacity: 1;
   transition: 0.2s;
 }
 
-.stamps img:hover, img.stock:hover, img.jamquiz:hover {
+img.stamps:hover, img.stock:hover, img.jamquiz:hover {
   opacity: 0.6;
   transition: 0.2s;
 }
@@ -158,4 +158,18 @@ h2, h3 {
 
 #stock p:first-child {
   bottom: -160px;
+}
+
+#jamquiz p {
+  padding-left: 35px;
+  padding-top: 40px;
+  margin-top: 80px;
+}
+
+#jamquiz p:first-child {
+  font-weight: bold;
+}
+
+#jamquiz p:nth-child(2) {
+  padding-top: 20px;
 }
