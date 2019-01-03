@@ -124,3 +124,13 @@ h2, h3 {
 .content img:last-child {
   padding-bottom: 100px;
 }
+
+.stamps, div img {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.stamps:hover, div img:hover {
+  opacity: 0.6;
+  transition: 0.2s;
+}
