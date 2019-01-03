@@ -125,21 +125,37 @@ h2, h3 {
   padding-bottom: 100px;
 }
 
-.project-container a, .project-container img {
+.stamps img, img.stock, img.jamquiz {
   opacity: 1;
   transition: 0.2s;
 }
 
-.project-container a:hover, .project-container img:hover {
+.stamps img:hover, img.stock:hover, img.jamquiz:hover {
   opacity: 0.6;
   transition: 0.2s;
 }
 
 .project-container p {
-  position: relative;
+  position: absolute;
   opacity: 0;
+  font-size: 15px;
 }
 
 .project-container:hover p {
   opacity: 1;
+}
+
+#stamps p {
+  top: 100px;
+  left: 120px;
+}
+
+#stock p {
+  bottom: -200px;
+  right: 0px;
+  width: 555px;
+}
+
+#stock p:first-child {
+  bottom: -160px;
 }
