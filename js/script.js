@@ -58,13 +58,14 @@ $(document).ready(function() {
       'left' : $(this).position().left,
       'opacity' : '0.6'
     });
-    $(".piece").mouseleave(function() {
-      $(".overlay").css({
-        'width' : $(this).css('width'),
-        'height' : $(this).css('height'),
-        'top' : $(this).position().top,
-        'left' : $(this).position().left,
-        'opacity' : '0'
-      });
+  });
+  $(".piece").mouseleave(function() {
+    $(".overlay").css({
+      'width' : $(this).css('width'),
+      'height' : $(this).css('height'),
+      'top' : $(this).position().top,
+      'left' : $(this).position().left,
+      'opacity' : '0'
+    });
   });
 });
