@@ -12,6 +12,7 @@ $(document).ready(function() {
     $(".project-container p").css({
       'opacity' : '0'
     });
+  });
 
   // titles and descriptions to be on image overlays
   var contentArray = new Array();
