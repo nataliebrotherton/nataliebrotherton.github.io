@@ -47,7 +47,7 @@ $(document).ready(function() {
   for (i = contentArray.length-1; i >= 0; i--) {
     filename = dir + i + ".jpg";
     contentArray[i][2] = filename;
-    $("div.works").prepend('<div class="container'+ i +'" />');
+    $("div.works").prepend('<div id="container" class="container'+ i +'" />');
     var overlay = $('<div />').attr({
         'class' : 'overlay'
       }).prependTo('.container'+i);
