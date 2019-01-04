@@ -107,7 +107,6 @@ h2, h3 {
 }
 
 .overlay {
-  position: fixed;
   z-index: 2;
   background-color: black;
   opacity: 0;
