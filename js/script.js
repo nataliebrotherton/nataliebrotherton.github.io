@@ -3,11 +3,15 @@ $(document).ready(function() {
     $("#sidenav").slideToggle("fast");
   });
 
-  $("img.stamps, img.jamquiz, img.stock").hover(function() {
+  $("img.stamps, img.jamquiz, img.stock").mouseenter(function() {
     $(".project-container p").css({
       'opacity' : '1'
     });
   });
+  $("img.stamps, img.jamquiz, img.stock").mouseleave(function() {
+    $(".project-container p").css({
+      'opacity' : '0'
+    });
 
   // titles and descriptions to be on image overlays
   var contentArray = new Array();
@@ -39,7 +43,7 @@ $(document).ready(function() {
   // create divs to hold images and place images inside them
   var dir = "/static/assets/portfolio/";
   var i;
-  for (i = 0; i < contentArray.length; i++) {
+  for (i = contentArray.length-1; i >= 0; i--) {
     filename = dir + i + ".jpg";
     contentArray[i][2] = filename;
     $("div.works").prepend('<div class="container'+ i +'" />');
@@ -58,9 +62,10 @@ $(document).ready(function() {
         }).prependTo('.container'+i);
   }
 
-  $(".piece").hover(function() {
+  $(".piece").mouseenter(function() {
     var i = $(this).attr('id');
-    $(".overlay").css({
+    var selector = ".container" + i + " .overlay"
+    $(selector).css({
       'background-color' : 'black',
       'width' : $(this).css('width'),
       'height' : $(this).css('height'),
@@ -69,7 +74,8 @@ $(document).ready(function() {
   });
   $(".piece").mouseleave(function() {
     var i = $(this).attr('id');
-    $(".overlay").css({
+    var selector = ".container" + i + " .overlay"
+    $(selector).css({
       'opacity' : '0'
     });
   });
