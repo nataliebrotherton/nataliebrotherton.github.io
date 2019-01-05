@@ -1,28 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Shrikhand|PT+Mono');
-
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Signika');
 body {
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: linear-gradient(270deg, #FFF7D4, #D4F0FF, #EFFFD4);
-  background-size: 400% 400%;
-  animation: AnimationName 30s ease infinite;
+  background: #d3d88c;
   overflow: hidden;
 }
 
-@keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-
 p, a {
-  font-family: "PT Mono", serif;
+  font-family: "Signika", serif;
 }
 
 h2, h3 {
-  font-family: "Shrikhand", cursive;
+  font-family: "Archivo Black", cursive;
 }
 
 .header {
@@ -32,12 +23,14 @@ h2, h3 {
   width: 100%;
   bottom: 0;
   margin: 0 0 0 0;
+  transform: rotate(-90deg);
+  transform-origin: right bottom 3;
 }
 
 .header h3 {
-  font-size: 17vw;
+  font-size: 18vw;
   color: white;
-  margin: 0 0 0 0;
+  margin: 3vw 0 0 0;
 }
 
 .header h3:first-child {
@@ -69,7 +62,7 @@ h2, h3 {
 
 .content p, .content a {
   line-height: 1;
-  font-size: 20px;
+  font-size: 40px;
   text-align: right;
 }
 
@@ -77,6 +70,12 @@ h2, h3 {
   text-decoration: none;
   color: black;
   font-weight: bold;
+}
+
+.content a:hover {
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
 }
 
 .content h2 {
