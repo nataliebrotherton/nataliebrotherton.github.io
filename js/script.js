@@ -4,12 +4,14 @@ $(document).ready(function() {
   });
 
   $("img.stamps, img.jamquiz, img.stock").mouseenter(function() {
-    $(".project-container p").css({
+    var selector = "#" + $(this).attr('class') + " p";
+    $(selector).css({
       'opacity' : '1'
     });
   });
   $("img.stamps, img.jamquiz, img.stock").mouseleave(function() {
-    $(".project-container p").css({
+    var selector = "#" + $(this).attr('class') + " p";
+    $(selector).css({
       'opacity' : '0'
     });
   });
@@ -52,8 +54,7 @@ $(document).ready(function() {
         'class' : 'overlay'
       }).prependTo('.container'+i);
     $('.overlay').css({
-      'background-color' : 'black',
-      'padding-top' : '70px'
+      'background-color' : 'black'
     });
     var img = $('<img />').attr({
             'id': i,
