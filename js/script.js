@@ -67,7 +67,7 @@ $(document).ready(function() {
     var selector = ".container" + i + " .overlay"
     $(selector).css({
       'width' : $(this).css('width'),
-      'height' : $(this).css('height'),
+      'height' : $(this).css('height') - 20,
     });
   });
 });
