@@ -61,6 +61,16 @@ $(document).ready(function() {
             'class': 'piece',
             'src': filename
         }).prependTo('.container'+i);
+    var desc = $('<p />').attr({
+      'id' : i,
+      'class' : 'imgdesc'
+    }).prependTo('.container'+i);
+    desc.text(contentArray[i][1]);
+    var title = $('<p />').attr({
+      'id' : i,
+      'class' : 'imgtitle'
+    }).prependTo('.container'+i);
+    title.text(contentArray[i][0]);
   }
 
   $(".piece").hover(function() {

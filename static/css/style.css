@@ -147,6 +147,7 @@ img.stamps:hover, img.stock:hover, img.jamquiz:hover {
   position: absolute;
   opacity: 0;
   font-size: 15px;
+  z-index: 1;
 }
 
 #stamps p {
