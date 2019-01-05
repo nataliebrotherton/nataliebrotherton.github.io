@@ -61,15 +61,19 @@ $(document).ready(function() {
             'class': 'piece',
             'src': filename
         }).prependTo('.container'+i);
+    var text_container = $('<div />').attr({
+      'id': i,
+      'class' : 'text'
+    }).prependTo('.container'+i);
     var desc = $('<p />').attr({
       'id' : i,
       'class' : 'imgdesc'
-    }).prependTo('.container'+i);
+    }).prependTo(text_container);
     desc.text(contentArray[i][1]);
     var title = $('<p />').attr({
       'id' : i,
       'class' : 'imgtitle'
-    }).prependTo('.container'+i);
+    }).prependTo(text_container);
     title.text(contentArray[i][0]);
   }
 
