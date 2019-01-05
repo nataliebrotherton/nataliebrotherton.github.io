@@ -53,7 +53,6 @@ $(document).ready(function() {
       }).prependTo('.container'+i);
     $('.overlay').css({
       'background-color' : 'black',
-      'opacity' : '0',
       'padding-top' : '70px'
     });
     var img = $('<img />').attr({
@@ -63,21 +62,13 @@ $(document).ready(function() {
         }).prependTo('.container'+i);
   }
 
-  $(".piece").mouseenter(function() {
+  $(".piece").hover(function() {
     var i = $(this).attr('id');
     var selector = ".container" + i + " .overlay"
     $(selector).css({
-      'background-color' : 'black',
       'width' : $(this).css('width'),
       'height' : $(this).css('height'),
       'opacity' : '0.6'
-    });
-  });
-  $(".piece").mouseleave(function() {
-    var i = $(this).attr('id');
-    var selector = ".container" + i + " .overlay"
-    $(selector).css({
-      'opacity' : '0'
     });
   });
 });
