@@ -65,9 +65,10 @@ $(document).ready(function() {
   $(".piece").hover(function() {
     var i = $(this).attr('id');
     var selector = ".container" + i + " .overlay"
+    var height = $(this).css('height') - 20;
     $(selector).css({
       'width' : $(this).css('width'),
-      'height' : $(this).css('height') - 20
+      'height' : height
     });
   });
 });
