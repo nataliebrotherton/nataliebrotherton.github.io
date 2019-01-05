@@ -68,7 +68,6 @@ $(document).ready(function() {
     $(selector).css({
       'width' : $(this).css('width'),
       'height' : $(this).css('height'),
-      'opacity' : '0.6'
     });
   });
 });
