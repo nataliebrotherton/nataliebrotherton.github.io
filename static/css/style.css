@@ -54,7 +54,7 @@ h2, h3 {
 .content {
   position: absolute;
   height: auto;
-  top: 50%;
+  top: 30%;
   margin-top: -(height/2);
   margin-left: -7%;
   text-align: center;
@@ -63,7 +63,7 @@ h2, h3 {
 
 .content p, .content a {
   line-height: 1;
-  font-size: 40px;
+  font-size: 30px;
   text-align: right;
 }
 
@@ -82,7 +82,7 @@ h2, h3 {
 .content h2 {
   position: absolute;
   height: auto;
-  margin-top: -20%;
+  margin-top: 30%;
   font-size: 90px;
   margin-left: -25%;
 }
