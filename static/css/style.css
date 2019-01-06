@@ -139,6 +139,14 @@ img.stamps:hover, img.stock:hover, img.jamquiz:hover {
   transition: 0.2s;
 }
 
+.project-container {
+  width: 800px;
+}
+
+.project-container img {
+  width: 650px;
+}
+
 .project-container p {
   position: absolute;
   opacity: 0;

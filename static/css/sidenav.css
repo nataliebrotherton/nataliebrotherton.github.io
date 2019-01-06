@@ -4,8 +4,8 @@
   position: fixed;
   z-index: 1;
   left: 0px;
-  top: 315px;
-  padding-top: 13px;
+  top: 270px;
+  padding-top: 10px;
   display: none;
   flex-direction: row;
   transform: rotate(-90deg);
