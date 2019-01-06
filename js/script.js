@@ -1,6 +1,6 @@
 $(document).ready(function() {
   // random color every visit function!!!
-  var colors = {"#f4ff56", "#3cff45", "#ff91bd", "#42a5ff"};
+  var colors = ["#f4ff56", "#3cff45", "#ff91bd", "#42a5ff"];
   var num = Math.floor(Math.random() * (colors.length - 0 + 1) ) + 0;
   $("body").css({
     'background-color' : colors[num];
