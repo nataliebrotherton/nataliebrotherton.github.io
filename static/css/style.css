@@ -111,17 +111,13 @@ h2, h3 {
   background-color: black;
   opacity: 0;
   position: absolute;
-  top: 50px;
+  top: 70px;
   transition: 0.2s;
 }
 
 .overlay:hover {
   opacity: 0.4;
   transition: 0.2s;
-}
-
-.content img:nth-child(2), .content img:last-child {
-  height: 500px;
 }
 
 .content img {
@@ -182,4 +178,38 @@ img.stamps:hover, img.stock:hover, img.jamquiz:hover {
 
 #container {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#container .text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.text p {
+  position: absolute;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  z-index: 3;
+  opacity: 0;
+  width: 200px;
+}
+
+.text p:last-child {
+  top: 50px;
+  font-size: 25px;
+}
+
+#container:hover p {
+  opacity: 1;
+}
+
+#container:hover p:last-child {
+  opacity: .8;
 }
