@@ -1,16 +1,17 @@
 .content {
-      height: 100%;
-      overflow-y:scroll;
-      top: 0%;
-      text-align: initial;
-      width: auto;
-  }
+  height: 100%;
+  overflow-y:scroll;
+  top: 0%;
+  text-align: initial;
+  width: auto;
+  position: absolute;
+}
 
-  .works {
-    z-index: 1;
-  }
+.works {
+  z-index: 1;
+}
 
-  ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 0;
   }
 
@@ -59,4 +60,19 @@
 
   #container:hover p:last-child {
     opacity: .8;
+  }
+
+  .text p {
+    position: absolute;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    z-index: 3;
+    opacity: 0;
+    width: 200px;
+  }
+
+  .text p:last-child {
+    top: 50px;
+    font-size: 25px;
   }
