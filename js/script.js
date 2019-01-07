@@ -89,7 +89,7 @@ $(document).ready(function() {
 
 
   $(".piece").duotone({
-    gradientMap = '#000, #f4ff56'
+    gradientMap: '#000,' + color
   }).duotone("process");
 
   $(".overlay, .text").hover(function() {
