@@ -2,8 +2,9 @@ $(document).ready(function() {
   // random color every visit function!!!
   var colors = ["#f4ff56", "#3cff45", "#ff91bd", "#42a5ff", "#ff691e"];
   var num = Math.floor(Math.random() * (colors.length - 0 + 1) ) + 0;
+  var color = colors[num]
   $("body").css({
-    'background-color' : colors[num]
+    'background-color' : color
   });
 
   // sidebar toggle function
@@ -86,8 +87,9 @@ $(document).ready(function() {
     title.text(contentArray[i][0]);
   }
 
+  var gradient = "#000," + color;
   $(".piece").duotone({
-    gradientMap = 'black, ' + colors[num]
+    gradientMap = gradient
   }).duotone("process");
 
   $(".overlay, .text").hover(function() {
