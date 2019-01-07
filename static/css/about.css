@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Signika');
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  overflow: hidden;
+}
+
+p, a {
+  font-family: "Signika", serif;
+}
+
+h2, h3 {
+  font-family: "Archivo Black", cursive;
+}
+
+.header {
+  position: absolute;
+  width: auto;
+  height: auto;
+  width: 100%;
+  margin: 0 0 0 0;
+  transform: rotate(90deg);
+  transform-origin: top left 0;
+  left: 100vw;
+  top: -4vh;
+}
+
+.header h3 {
+  font-size: 21vh;
+  color: white;
+  margin: 3vh 0 0 0;
+}
+
+.header h3:first-child {
+  margin-left: 9vh;
+}
+
+.header h3:last-child {
+  margin-top: -13vh;
+}
+
+.navbtn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-left: 15px;
+  padding-top: 10px;
+  color: white;
+}
+
+.content {
+  position: absolute;
+  height: auto;
+  top: 30%;
+  margin-top: -(height/2);
+  margin-left: -7%;
+  text-align: center;
+  width: 800px;
+}
+
+.content p, .content a {
+  line-height: 1;
+  font-size: 30px;
+  text-align: right;
+}
+
+.content a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.content a:hover {
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+}
+
+.content h2 {
+  position: absolute;
+  height: auto;
+  margin-top: 30%;
+  font-size: 90px;
+  margin-left: -25%;
+}

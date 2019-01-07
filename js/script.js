@@ -1,6 +1,6 @@
 $(document).ready(function() {
   // random color every visit function!!!
-  var colors = ["#f4ff56", "#3cff45", "#ff91bd", "#42a5ff"];
+  var colors = ["#f4ff56", "#3cff45", "#ff91bd", "#42a5ff", "#ff691e"];
   var num = Math.floor(Math.random() * (colors.length - 0 + 1) ) + 0;
   $("body").css({
     'background-color' : colors[num]
@@ -63,7 +63,7 @@ $(document).ready(function() {
         'class' : 'overlay'
       }).prependTo('.container'+i);
     $('.overlay').css({
-      'background-color' : 'black'
+      'background-color' : colors[num]
     });
     var img = $('<img />').attr({
             'id': i,
@@ -86,12 +86,17 @@ $(document).ready(function() {
     title.text(contentArray[i][0]);
   }
 
-  $(".piece").hover(function() {
+  $(".piece").duotone({
+    gradientMap = 'black, ' + colors[num]
+  }).duotone("process");
+
+  $(".overlay, .text").hover(function() {
     var i = $(this).attr('id');
     var selector = ".container" + i + " .overlay"
     $(selector).css({
       'width' : $(this).css('width'),
       'height' : $(this).css('height')
     });
+    $(this).duotone("reset");
   });
 });
