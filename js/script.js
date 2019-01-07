@@ -87,11 +87,6 @@ $(document).ready(function() {
     title.text(contentArray[i][0]);
   }
 
-
-  $(".piece").duotone({
-    gradientMap: '#000,' + color
-  }).duotone("process");
-
   $(".overlay, .text").hover(function() {
     var i = $(this).attr('id');
     var selector = ".container" + i + " .overlay"
@@ -99,6 +94,5 @@ $(document).ready(function() {
       'width' : $(this).css('width'),
       'height' : $(this).css('height')
     });
-    $(this).duotone("reset");
   });
 });
