@@ -87,7 +87,7 @@ $(document).ready(function() {
     title.text(contentArray[i][0]);
   }
 
-  $(".overlay, .text").hover(function() {
+  $(".overlay").hover(function() {
     var i = $(this).attr('id');
     var selector = ".container" + i + " .overlay"
     $(selector).css({
