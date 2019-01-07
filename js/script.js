@@ -87,9 +87,9 @@ $(document).ready(function() {
     title.text(contentArray[i][0]);
   }
 
-  var gradient = "#000," + color;
+
   $(".piece").duotone({
-    gradientMap = gradient
+    gradientMap = "#000, #f4ff56";
   }).duotone("process");
 
   $(".overlay, .text").hover(function() {
