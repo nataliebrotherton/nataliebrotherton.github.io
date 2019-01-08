@@ -91,8 +91,8 @@ $(document).ready(function() {
     var i = $(".piece").attr('id');
     var selector = ".container" + i + " .overlay"
     $(selector).css({
-      'width' : $(this).css('width'),
-      'height' : $(this).css('height')
+      'width' : $(".piece").css('width'),
+      'height' : $(".piece").css('height')
     });
   });
 });
