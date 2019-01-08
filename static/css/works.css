@@ -15,7 +15,7 @@
   padding-bottom: 100px;
 }
 
-img.stamps:hover, img.stock, img.jamquiz {
+img.stamps, img.stock, img.jamquiz {
   opacity: 0.6;
   transition: 0.2s;
   filter: grayscale(100%) contrast(1.5);
