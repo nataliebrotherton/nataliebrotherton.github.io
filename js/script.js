@@ -85,14 +85,18 @@ $(document).ready(function() {
       'class' : 'imgtitle'
     }).prependTo(text_container);
     title.text(contentArray[i][0]);
+    overlay.css({
+      'width' : img.css('width'),
+      'height' : img.css('height')
+    });
   }
 
   $(".piece, .text").hover(function() {
     var i = $(".piece").attr('id');
     var selector = ".container" + i + " .overlay"
     $(selector).css({
-      'width' : $("img#" + i).css('width'),
-      'height' : $("img#" + i).css('height')
+      // 'width' : $("img#" + i).css('width'),
+      // 'height' : $("img#" + i).css('height')
     });
   });
 });
