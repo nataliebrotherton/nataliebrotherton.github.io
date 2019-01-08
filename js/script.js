@@ -87,8 +87,8 @@ $(document).ready(function() {
     title.text(contentArray[i][0]);
   }
 
-  $(".overlay").hover(function() {
-    var i = $(this).attr('id');
+  $(".piece, .text").hover(function() {
+    var i = $(".piece").attr('id');
     var selector = ".container" + i + " .overlay"
     $(selector).css({
       'width' : $(this).css('width'),
