@@ -1,17 +1,21 @@
 // smoothstate for page transitions
 ;(function ($) {
   'use strict';
-  var $body = $('html, body'), // selectors to animate
-    content = $(".header, .content").smoothState({
-      onStart : {
-        duration: 250,
-        render: function() {
-          content.toggleAnimationClass('is-exiting');
+  var content  = $('.content, .header').smoothState({
+        // onStart runs as soon as link has been activated
+        onStart : {
 
-          $body.animate({ 'scrolltop' : 0 });
+          // Set the duration of our animation
+          duration: 250,
+
+          // Alterations to the page
+          render: function () {
+
+            // Quickly toggles a class and restarts css animations
+            content.toggleAnimationClass('is-exiting');
+          }
         }
-      }
-    }).data('smoothState');
+      }).data('smoothState'); // makes public methods available
 })(jQuery);
 
 $(document).ready(function() {
