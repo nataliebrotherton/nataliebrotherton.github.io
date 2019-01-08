@@ -1,7 +1,7 @@
 // smoothstate for page transitions
 ;(function ($) {
   'use strict';
-  var content  = $('.content, .header').smoothState({
+  var content  = $('#content, #header').smoothState({
         // onStart runs as soon as link has been activated
         onStart : {
 
