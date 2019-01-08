@@ -16,13 +16,15 @@
 }
 
 img.stamps:hover, img.stock, img.jamquiz {
-  opacity: 1;
+  opacity: 0.6;
   transition: 0.2s;
+  filter: grayscale(100%) contrast(1.5);
 }
 
 img.stamps:hover, img.stock:hover, img.jamquiz:hover {
-  opacity: 0.6;
+  opacity: 1;
   transition: 0.2s;
+  filter: grayscale(0);
 }
 
 .project-container {

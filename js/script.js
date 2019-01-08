@@ -1,3 +1,19 @@
+// smoothstate for page transitions
+;(function ($) {
+  'use strict';
+  var $body = $('html, body'), // selectors to animate
+    content = $(".header, .content").smoothState({
+      onStart : {
+        duration: 250,
+        render: function() {
+          content.toggleAnimationClass('is-exiting');
+
+          $body.animate({ 'scrolltop' : 0 });
+        }
+      }
+    }).data('smoothState');
+})(jQuery);
+
 $(document).ready(function() {
   // random color every visit function!!!
   var colors = ["#f4ff56", "#3cff45", "#ff91bd", "#42a5ff", "#ff691e"];

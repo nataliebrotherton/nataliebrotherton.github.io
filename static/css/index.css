@@ -120,3 +120,7 @@ h2, h3 {
 .scene_element--fadeinleft {
   animation-name: fadeInLeft;
 }
+
+&.is-exiting .scene {
+  animation-direction: alternate-reverse;
+}
