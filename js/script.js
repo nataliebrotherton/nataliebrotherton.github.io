@@ -115,8 +115,8 @@ $(document).ready(function() {
     var i = $(".piece").attr('id');
     var selector = ".container" + i + " .overlay"
     $(selector).css({
-      // 'width' : $("img#" + i).css('width'),
-      // 'height' : $("img#" + i).css('height')
+      'width' : $("img#" + i).css('width'),
+      'height' : $("img#" + i).css('height')
     });
   });
 });
