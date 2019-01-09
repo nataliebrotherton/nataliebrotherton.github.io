@@ -111,12 +111,12 @@ $(document).ready(function() {
     });
   }
 
-  $(".piece, .text").hover(function() {
+  $(".piece").hover(function() {
     var i = $(".piece").attr('id');
     var selector = ".container" + i + " .overlay"
     $(selector).css({
-      'width' : $("img#" + i).css('width'),
-      'height' : $("img#" + i).css('height')
+      'width' : $(this).css('width'),
+      'height' : $(this).css('height')
     });
   });
 });
