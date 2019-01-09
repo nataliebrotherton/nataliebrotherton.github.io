@@ -106,8 +106,8 @@ $(document).ready(function() {
     }).prependTo(text_container);
     title.text(contentArray[i][0]);
     overlay.css({
-      'width' : img.css('width'),
-      'height' : img.css('height')
+      'width' : $('img#' + i).css('width'),
+      'height' : $('img#' + i).css('height')
     });
   }
 
