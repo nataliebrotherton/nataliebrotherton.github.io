@@ -20,13 +20,10 @@
   font-family: "Archivo Black", cursive;
 }
 
-.nav:hover {
-  color: white;
-}
-
 .navbtn {
   font-size:30px;
   cursor:pointer;
+  color: white;
 }
 
 .content {

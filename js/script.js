@@ -32,7 +32,7 @@ $(document).ready(function() {
   });
   $(".color-secondary").css({
     'color' : secondary_color
-  })
+  });
   $(".border-secondary").css({
     'border' : border_style
   });
