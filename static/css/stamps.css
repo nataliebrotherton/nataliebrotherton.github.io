@@ -79,12 +79,11 @@ img {
   filter:contrast(150%);
   opacity: 0.6;
   transition: 0.2s;
-  border: 10px solid green;
 }
 
 #container:hover img {
   opacity: 1;
   filter: contrast(100%);
   transition: 0.2s;
-  transform: scale(1.1);
+  transform: scale(1.09);
 }

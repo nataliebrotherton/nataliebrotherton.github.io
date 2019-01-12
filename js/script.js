@@ -30,11 +30,16 @@ $(document).ready(function() {
   $("body, .primary").css({
     'background-color' : primary_color
   });
+  $(".color-secondary").css({
+    'color' : secondary_color
+  })
   $(".border-secondary").css({
     'border' : border_style
   });
-  $(".hover-secondary:hover").css({
-    'color' : secondary_color
+  $(".hover-secondary").hover(function() {
+    $(this).css({
+      'color' : secondary_color
+    });
   });
 
   // sidebar toggle function
@@ -89,6 +94,7 @@ $(document).ready(function() {
   for (i = contentArray.length-1; i >= 0; i--) {
     filename = dir + i + ".jpg";
     contentArray[i][2] = filename;
+    // prepend piece containers to works container
     $("div.works").prepend('<div id="container" class="container'+ i +'" />');
     var overlay = $('<div />').attr({
         'class' : 'overlay'
@@ -96,6 +102,7 @@ $(document).ready(function() {
     $('.overlay').css({
       'background-color' : primary_color
     });
+    // prepend image to piece container
     var img = $('<img />').attr({
             'id': i,
             'class': 'piece border-secondary',
