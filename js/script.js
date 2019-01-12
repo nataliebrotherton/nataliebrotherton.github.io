@@ -20,11 +20,21 @@
 
 $(document).ready(function() {
   // random color every visit function!!!
-  var colors = ["#f4ff56", "#3cff45", "#ff91bd", "#42a5ff", "#ff691e"];
+  var primary_colors = ["#f4ff56", "#3cff45", "#ff91bd", "#42a5ff", "#ff691e"];
+  var secondary_colors = ["#ff7e00", "#165c00", "#4e00ff", "#000cff", "#d70000"];
+  var tertiary_colors = [];
   var num = Math.floor(Math.random() * (colors.length - 0 + 1) ) + 0;
-  var color = colors[num]
-  $("body").css({
-    'background-color' : color
+  var primary_color = primary_colors[num];
+  var secondary_color = secondary_colors[num];
+  var border_style = "10px solid" + secondary_color;
+  $("body, .primary").css({
+    'background-color' : primary_color
+  });
+  $(".border-secondary").css({
+    'border' : border_style
+  });
+  $(".hover-secondary:hover").css({
+    'color' : secondary_color
   });
 
   // sidebar toggle function
@@ -84,11 +94,11 @@ $(document).ready(function() {
         'class' : 'overlay'
       }).prependTo('.container'+i);
     $('.overlay').css({
-      'background-color' : colors[num]
+      'background-color' : primary_color
     });
     var img = $('<img />').attr({
             'id': i,
-            'class': 'piece',
+            'class': 'piece border-secondary',
             'src': filename
         }).prependTo('.container'+i);
     var text_container = $('<div />').attr({

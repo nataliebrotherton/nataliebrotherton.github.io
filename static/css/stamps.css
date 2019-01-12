@@ -37,14 +37,13 @@
   transition: 0.2s;
 }
 
-  #container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
+#container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 30px 30px 30px;
+}
 
 #container .text {
   position: absolute;

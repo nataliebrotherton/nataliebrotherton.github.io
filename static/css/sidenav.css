@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Fugaz+One|IBM+Plex+Sans');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Signika');
 
 .sidenav {
   position: fixed;
@@ -16,14 +16,17 @@
   padding: 0px 0px 130px 0px;
   text-decoration: none;
   font-size: 30px;
-  color: #000000;
-}
-
-.sidenav span {
+  color: white;
+  font-family: "Archivo Black", cursive;
 }
 
 .nav:hover {
   color: white;
+}
+
+.navbtn {
+  font-size:30px;
+  cursor:pointer;
 }
 
 .content {
