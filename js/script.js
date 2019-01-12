@@ -23,7 +23,7 @@ $(document).ready(function() {
   var primary_colors = ["#f4ff56", "#3cff45", "#ff91bd", "#42a5ff", "#ff691e"];
   var secondary_colors = ["#ff7e00", "#165c00", "#4e00ff", "#000cff", "#d70000"];
   var tertiary_colors = [];
-  var num = Math.floor(Math.random() * (colors.length - 0 + 1) ) + 0;
+  var num = Math.floor(Math.random() * (primary_colors.length - 0 + 1) ) + 0;
   var primary_color = primary_colors[num];
   var secondary_color = secondary_colors[num];
   var border_style = "10px solid" + secondary_color;
