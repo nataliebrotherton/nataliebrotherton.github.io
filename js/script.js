@@ -105,18 +105,14 @@ $(document).ready(function() {
       'class' : 'imgtitle'
     }).prependTo(text_container);
     title.text(contentArray[i][0]);
-    overlay.css({
-      'width' : $('img#' + i).css('width'),
-      'height' : $('img#' + i).css('height')
-    });
   }
 
   $(".piece").hover(function() {
     var i = $(".piece").attr('id');
     var selector = ".container" + i + " .overlay"
     $(selector).css({
-      'width' : $(this).css('width'),
-      'height' : $(this).css('height')
+      // 'width' : $(this).css('width'),
+      // 'height' : $(this).css('height')
     });
   });
 });
