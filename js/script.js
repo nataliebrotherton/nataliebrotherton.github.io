@@ -28,28 +28,6 @@ $(document).ready(function() {
   var secondary_color = secondary_colors[num];
   var tertiary_color = tertiary_colors[num];
   var border_style = "10px solid" + secondary_color;
-  $("body, .primary").css({
-    'background-color' : primary_color
-  });
-  $(".color-secondary").css({
-    'color' : secondary_color
-  });
-  $(".border-secondary").css({
-    'border' : border_style
-  });
-  $(".hover-secondary").mouseenter(function() {
-    $(this).css({
-      'color' : secondary_color
-    });
-  });
-  $(".hover-secondary").mouseleave(function() {
-    $(this).css({
-      'color' : 'white'
-    });
-  });
-  $(".color-tertiary p, .color-tertiary").css({
-    'color' : tertiary_color
-  });
 
   // sidebar toggle function
   $(".navbtn").click(function(){
@@ -140,5 +118,28 @@ $(document).ready(function() {
       // 'width' : $(this).css('width'),
       // 'height' : $(this).css('height')
     });
+  });
+
+  $("body, .primary").css({
+    'background-color' : primary_color
+  });
+  $(".color-secondary").css({
+    'color' : secondary_color
+  });
+  $(".border-secondary").css({
+    'border' : border_style
+  });
+  $(".hover-secondary").mouseenter(function() {
+    $(this).css({
+      'color' : secondary_color
+    });
+  });
+  $(".hover-secondary").mouseleave(function() {
+    $(this).css({
+      'color' : 'white'
+    });
+  });
+  $(".color-tertiary p, .color-tertiary").css({
+    'color' : tertiary_color
   });
 });
