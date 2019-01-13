@@ -17,6 +17,7 @@
 }
 
 .project-container {
+  position: relative;
   padding: 30px 30px 30px 30px;
 }
 
@@ -26,16 +27,13 @@
 
 .project-container img {
   width: 650px;
-
-}
-
-img.stamps, img.stock, img.jamquiz {
   opacity: 0.6;
   transition: 0.2s;
   filter: grayscale(100%) contrast(1.5);
+
 }
 
-img.stamps:hover, img.stock:hover, img.jamquiz:hover {
+.project-container:hover img {
   opacity: 1;
   transition: 0.2s;
   filter: grayscale(0);
@@ -47,10 +45,48 @@ img.stock:hover {
 }
 
 .text {
-  position: absolute;
-  opacity: 0;
-  font-size: 15px;
   z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 300px;
+  border: 10px solid;
+  opacity: 0;
+  top: 18px;
+  left: -45%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.text p {
+  text-align: center;
+  font-size: 30px;
+  line-height: 0px;
+}
+
+.project-container:nth-child(2) .text p:first-child {
+  font-size: 20px;
+  line-height: 0px;
+}
+
+.project-container:nth-child(2) .text p:nth-child(2) {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.project-container:last-child .text p:first-child {
+  padding-top: 30px;
+}
+
+.project-container:last-child .text p:nth-child(2) {
+  line-height: 20px;
+}
+
+.project-container:last-child .text p {
+  font-size: 20px;
 }
 
 .project-container:hover .text {
