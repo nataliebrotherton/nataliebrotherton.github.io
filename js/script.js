@@ -22,10 +22,11 @@ $(document).ready(function() {
   // random color every visit function!!!
   var primary_colors = ["#f4ff56", "#3cff45", "#ff91bd", "#42a5ff", "#ff691e"];
   var secondary_colors = ["#ff7e00", "#165c00", "#4e00ff", "#000cff", "#d70000"];
-  var tertiary_colors = [];
+  var tertiary_colors = ["#ffab07", "#ebffda", "#f3e4f9", "#bcebff", "#f7df5e"];
   var num = Math.floor(Math.random() * (primary_colors.length - 0 + 1) ) + 0;
   var primary_color = primary_colors[num];
   var secondary_color = secondary_colors[num];
+  var tertiary_color = tertiary_colors[num];
   var border_style = "10px solid" + secondary_color;
   $("body, .primary").css({
     'background-color' : primary_color
@@ -36,10 +37,18 @@ $(document).ready(function() {
   $(".border-secondary").css({
     'border' : border_style
   });
-  $(".hover-secondary").hover(function() {
+  $(".hover-secondary").mouseenter(function() {
     $(this).css({
       'color' : secondary_color
     });
+  });
+  $(".hover-secondary").mouseleave(function() {
+    $(this).css({
+      'color' : white
+    });
+  });
+  $(".color-tertiary p").css({
+    'color' : tertiary_color
   });
 
   // sidebar toggle function
@@ -49,13 +58,13 @@ $(document).ready(function() {
 
   // project description hover functions
   $("img.stamps, img.jamquiz, img.stock").mouseenter(function() {
-    var selector = "#" + $(this).attr('class') + " p";
+    var selector = $(this).attr("id") + " p";
     $(selector).css({
       'opacity' : '1'
     });
   });
   $("img.stamps, img.jamquiz, img.stock").mouseleave(function() {
-    var selector = "#" + $(this).attr('class') + " p";
+    var selector = $(this).attr("id") + " p";
     $(selector).css({
       'opacity' : '0'
     });
