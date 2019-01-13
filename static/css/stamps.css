@@ -3,8 +3,8 @@
   overflow-y:scroll;
   top: 0%;
   text-align: center;
-  left: 10%;
-  width: 50%;
+  left: 15%;
+  width: 53%;
   position: absolute;
 }
 
@@ -59,8 +59,8 @@
   width: 300px;
   border: 10px solid;
   opacity: 0;
-  top: 0;
-  left: -330px;
+  top: 0px;
+  left: -50%;
 }
 
 .text p {
