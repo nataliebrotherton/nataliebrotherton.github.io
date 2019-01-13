@@ -29,14 +29,15 @@
   width: 650px;
   opacity: 0.6;
   transition: 0.2s;
-  filter: grayscale(100%) contrast(1.5);
+  filter:  contrast(150%);
 
 }
 
 .project-container:hover img {
+  transition: ease-in 0.2s;
   opacity: 1;
   transition: 0.2s;
-  filter: grayscale(0);
+  filter: grayscale(0) contrast(100%);
   transform: scale(1.05);
 }
 
@@ -67,6 +68,15 @@ img.stock:hover {
   line-height: 0px;
 }
 
+.text p:nth-child(2) {
+  opacity: 0.8;
+}
+
+.project-container:hover .text {
+  transition: ease-in 0.2s;
+  opacity: 1;
+}
+
 .project-container:nth-child(2) .text p:first-child {
   font-size: 20px;
   line-height: 0px;
@@ -87,8 +97,4 @@ img.stock:hover {
 
 .project-container:last-child .text p {
   font-size: 20px;
-}
-
-.project-container:hover .text {
-  opacity: 1;
 }
