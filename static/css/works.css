@@ -10,6 +10,11 @@
   z-index: 0;
 }
 
+.works {
+  position: absolute;
+  right: 0;
+}
+
 .project-container {
   width: 800px;
   padding: 30px 30px 30px 30px;
