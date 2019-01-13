@@ -3,11 +3,14 @@
   overflow-y:scroll;
   top: 0%;
   text-align: center;
-  width: auto;
+  left: 10%;
+  width: 50%;
   position: absolute;
 }
 
 .works {
+  position: absolute;
+  right: 0;
   z-index: 1;
 }
 
@@ -45,35 +48,40 @@
   padding: 30px 30px 30px 30px;
 }
 
-#container .text {
+.text {
+  z-index: 1;
   position: absolute;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-#container:hover p {
-  opacity: 1;
-}
-
-#container:hover p:last-child {
-  opacity: .8;
+  height: 100px;
+  width: 300px;
+  border: 10px solid;
+  opacity: 0;
+  top: 0;
+  left: -330px;
 }
 
 .text p {
-  position: absolute;
-    text-align: center;
-    font-size: 30px;
-    color: white;
-    z-index: 3;
-    opacity: 0;
-    width: 200px;
-  }
+  text-align: center;
+  font-size: 30px;
+  line-height: 0px;
+}
 
-  .text p:last-child {
-    top: 50px;
-    font-size: 25px;
-  }
+.text p:last-child {
+  opacity: 0.8;
+}
+
+#container:hover .text {
+  transition: ease-in 0.2s;
+  transition-delay: 0.1s;
+  opacity: 1;
+}
+
+.text p:last-child {
+  font-size: 25px;
+}
 
 img {
   filter:contrast(150%);
@@ -84,6 +92,6 @@ img {
 #container:hover img {
   opacity: 1;
   filter: contrast(100%);
-  transition: 0.2s;
+  transition: ease-in-out 0.2s;
   transform: scale(1.07);
 }

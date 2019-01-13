@@ -44,10 +44,10 @@ $(document).ready(function() {
   });
   $(".hover-secondary").mouseleave(function() {
     $(this).css({
-      'color' : white
+      'color' : 'white'
     });
   });
-  $(".color-tertiary p").css({
+  $(".color-tertiary p, .color-tertiary").css({
     'color' : tertiary_color
   });
 
@@ -119,16 +119,16 @@ $(document).ready(function() {
         }).prependTo('.container'+i);
     var text_container = $('<div />').attr({
       'id': i,
-      'class' : 'text'
+      'class' : 'text border-secondary'
     }).prependTo('.container'+i);
     var desc = $('<p />').attr({
       'id' : i,
-      'class' : 'imgdesc'
+      'class' : 'imgdesc color-tertiary'
     }).prependTo(text_container);
     desc.text(contentArray[i][1]);
     var title = $('<p />').attr({
       'id' : i,
-      'class' : 'imgtitle'
+      'class' : 'imgtitle color-tertiary'
     }).prependTo(text_container);
     title.text(contentArray[i][0]);
   }
