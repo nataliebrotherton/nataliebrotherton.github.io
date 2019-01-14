@@ -2,7 +2,7 @@
   height: 100%;
   overflow-y:scroll;
   top: 0;
-  width: 53%;
+  width: 55%;
   left: 15%;
   position: absolute;
 }
@@ -52,14 +52,13 @@ img.stock:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100px;
+  height: 120px;
   width: 300px;
   border: 10px solid;
   opacity: 0;
   top: 18px;
-  left: -45%;
-  padding-left: 5px;
-  padding-right: 5px;
+  left: -48%;
+  padding: 5px 15px 5px 15px;
 }
 
 .text p {
@@ -77,24 +76,27 @@ img.stock:hover {
   opacity: 1;
 }
 
-.project-container:nth-child(2) .text p:first-child {
+.project-container:nth-child(2) .text p,
+.project-container:last-child .text p {
+  position: absolute;
   font-size: 20px;
+}
+
+.project-container:nth-child(2) .text p:first-child {
+  top: 0;
   line-height: 0px;
 }
 
 .project-container:nth-child(2) .text p:nth-child(2) {
-  font-size: 20px;
-  line-height: 20px;
+  bottom: -10px;
+  line-height: 25px;
 }
 
 .project-container:last-child .text p:first-child {
-  padding-top: 30px;
+  top: 5px;
 }
 
 .project-container:last-child .text p:nth-child(2) {
-  line-height: 20px;
-}
-
-.project-container:last-child .text p {
-  font-size: 20px;
+  bottom: -5px;
+  line-height: 25px;
 }

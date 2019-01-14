@@ -22,8 +22,8 @@ $(document).ready(function() {
   // random color every visit function!!!
 
   // yellow, green, pink, blue, orange
-  var primary_colors = ["#f4ff56", "#3cff45", "#ff91bd", "#42a5ff", "#ff691e"];
-  var secondary_colors = ["#ff7e00", "#00aabf", "#4e00ff", "#000cff", "#d70000"];
+  var primary_colors = ["#ffd700", "#5bc500", "#f65275", "#00a9e0", "#ff9e1b"];
+  var secondary_colors = ["#ff8000", "#007741", "#6c1ecd", "#0033e0", "#ff2d1b"];
   var tertiary_colors = ["#ffab07", "#ebffda", "#f3e4f9", "#bcebff", "#f7df5e"];
   var num = Math.floor(Math.random() * (primary_colors.length - 0 + 1) ) + 0;
   var primary_color = primary_colors[num];
