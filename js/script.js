@@ -24,7 +24,7 @@ $(document).ready(function() {
   // yellow, green, pink, blue, orange
   var primary_colors = ["#ffd700", "#5bc500", "#f65275", "#00a9e0", "#ff9e1b"];
   var secondary_colors = ["#ff8000", "#007741", "#6c1ecd", "#0033e0", "#ff2d1b"];
-  var tertiary_colors = ["#ffab07", "#ebffda", "#f3e4f9", "#bcebff", "#f7df5e"];
+  var tertiary_colors = ["#fff", "#ebffda", "#f3e4f9", "#bcebff", "#fff4b8"];
   var num = Math.floor(Math.random() * (primary_colors.length - 0 + 1) ) + 0;
   var primary_color = primary_colors[num];
   var secondary_color = secondary_colors[num];
