@@ -18,12 +18,14 @@
   font-size: 30px;
   color: white;
   font-family: "Archivo Black", cursive;
+  transition: color ease-in .1s;
 }
 
 .navbtn {
   font-size:30px;
   cursor:pointer;
   color: white;
+  transition: color ease-in .1s;
 }
 
 .content {

@@ -28,7 +28,7 @@
 .project-container img {
   width: 650px;
   opacity: 0.6;
-  transition: 0.2s;
+  transition: ease-in 0.2s;
   filter:  contrast(150%);
 
 }
@@ -36,7 +36,6 @@
 .project-container:hover img {
   transition: ease-in 0.2s;
   opacity: 1;
-  transition: 0.2s;
   filter: grayscale(0) contrast(100%);
   transform: scale(1.05);
 }

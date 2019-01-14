@@ -93,6 +93,6 @@ img {
 #container:hover img {
   opacity: 1;
   filter: contrast(100%);
-  transition: ease-in-out 0.2s;
+  transition: ease-in 0.2s;
   transform: scale(1.07);
 }

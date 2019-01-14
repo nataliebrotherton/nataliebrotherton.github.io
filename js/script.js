@@ -132,21 +132,15 @@ $(document).ready(function() {
   $(".border-secondary").css({
     'border' : border_style
   });
-  // $(".hover-secondary").mouseenter(function() {
-  //   $(this).css({
-  //     'color' : secondary_color
-  //   });
-  // });
-  // $(".hover-secondary").mouseleave(function() {
-  //   $(this).css({
-  //     'color' : 'white'
-  //   });
-  // });
-  // nav animation
-  $(".hover-secondary").hover(function(){
-    $(this).filter(':not(:animated)').animate({ color : secondary_color });
-  }, function() {
-    $(this).animate({ color : 'white' });
+  $(".hover-secondary").mouseenter(function() {
+    $(this).css({
+      'color' : secondary_color
+    });
+  });
+  $(".hover-secondary").mouseleave(function() {
+    $(this).css({
+      'color' : 'white'
+    });
   });
 
   $(".color-tertiary p, .color-tertiary").css({
