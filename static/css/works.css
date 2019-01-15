@@ -99,3 +99,14 @@ img.stock:hover {
   bottom: -5px;
   line-height: 25px;
 }
+
+@media screen and (max-width: 1470px) {
+  .content {
+    top: 60px;
+    width: 80%;
+    left: 30%;
+  }
+  .project-container img {
+    width: 100%;
+  }
+}
