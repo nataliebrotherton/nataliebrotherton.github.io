@@ -36,7 +36,27 @@
   padding: 10px 30px 10px 30px;
 }
 
-@media screen and (max-width: 1470px) {
+/* device breakpoints */
+
+/* medium */
+@media screen and (max-width: 1439px) {
+  .content {
+    width: 60%;
+    top: 40%;
+    margin: 0 0 0 0;
+  }
+  .content h2 {
+    margin-top: 20vh;
+    margin-left: 2vw;
+
+  }
+  .content p, .content a {
+    font-size: 20px;
+  }
+}
+
+/* small */
+@media screen and (max-width: 1023px) {
   .content {
     width: 70%;
     top: 40%;
@@ -44,10 +64,25 @@
   }
   .content h2 {
     margin-top: -17vh;
-    margin-left: 1vw;
-
+    margin-left: 5vw;
   }
   .content p, .content a {
     font-size: 20px;
+  }
+}
+
+/* xsmall */
+@media screen and (max-width: 599px) {
+  .content {
+    width: 70%;
+    top: 30%;
+    margin: 0 0 0 0;
+  }
+  .content h2 {
+    font-size: 75px;
+    margin-top: -15vh;
+  }
+  .content p, .content a {
+    font-size: 25px;
   }
 }

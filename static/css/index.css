@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Signika');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Chivo');
 body {
   display: flex;
   align-items: center;
@@ -7,11 +7,11 @@ body {
 }
 
 p, a {
-  font-family: "Signika", serif;
+  font-family: "Chivo", sans-serif;
 }
 
 h2, h3 {
-  font-family: "Archivo Black", cursive;
+  font-family: "Archivo Black", sans-serif;
 }
 
 .header {
@@ -124,7 +124,13 @@ h2, h3 {
   animation-direction: alternate-reverse;
 }
 
-@media screen and (max-width: 1470px) {
+
+/* device breakpoints */
+
+/* xsmall, small, medium */
+@media screen and (max-width: 599px), 
+screen and (max-width: 1023px), 
+screen and (max-width: 1439px) {
   .header {
     transform: none;
     top: 0;
@@ -141,7 +147,7 @@ h2, h3 {
     z-index: 3;
   }
   .header h3:last-child {
-    margin-top: 2vh;
+    margin-top: 2.5vh;
   }
   .navbtn {
     z-index: 3;

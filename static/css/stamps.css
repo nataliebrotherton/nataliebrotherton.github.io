@@ -96,3 +96,7 @@ img {
   transition: ease-in 0.2s;
   transform: scale(1.07);
 }
+
+@media screen and (max-width: 1470px) {
+  
+}

@@ -2,8 +2,7 @@
   height: 100%;
   overflow-y:scroll;
   top: 0;
-  width: 55%;
-  left: 15%;
+  width: 80vw;
   position: absolute;
 }
 
@@ -30,7 +29,7 @@
   opacity: 0.6;
   transition: ease-in 0.2s;
   filter:  contrast(150%);
-
+  margin-right: 15vw;
 }
 
 .project-container:hover img {
@@ -56,8 +55,7 @@ img.stock:hover {
   border: 10px solid;
   opacity: 0;
   top: 18px;
-  left: -48%;
-  padding: 5px 15px 5px 15px;
+  left: -20vw;
 }
 
 .text p {
@@ -100,13 +98,41 @@ img.stock:hover {
   line-height: 25px;
 }
 
-@media screen and (max-width: 1470px) {
+@media screen and (max-width: 1439px) {
   .content {
     top: 60px;
-    width: 80%;
+    width: 100%;
+    left: 0;
+  }
+  .text {
+    width: 20vw;
+    height: 8vw;
+    left: -23vw;
+  }
+  .text p,
+  .project-container:nth-child(2) .text p,
+  .project-container:last-child .text p {
+    font-size: 100%;
+  }
+  .project-container img {
+    width: 50vw;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .text {
+    left: 0vw;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .content {
+    top: 60px;
+    width: 100%;
     left: 30%;
   }
   .project-container img {
-    width: 100%;
+    width: 80%;
   }
+
 }
