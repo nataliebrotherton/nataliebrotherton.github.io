@@ -19,6 +19,7 @@
 })(jQuery);
 
 $(document).ready(function() {
+
   // random color every visit function!!!
 
   // yellow, green, pink, blue, orange
@@ -30,6 +31,47 @@ $(document).ready(function() {
   var secondary_color = secondary_colors[num];
   var tertiary_color = tertiary_colors[num];
   var border_style = "10px solid" + secondary_color;
+
+  // check if phone or small width
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ||
+   (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform)) || $(window).width() <= 599) {
+	 $(".header").addClass("scene_element--fadein");
+	 $(".sidenav").addClass("background-color-secondary");
+     $(".navbtn").click(function(){
+	   $(".header").toggle();
+
+	   // change nav link hover color to primary 
+	   $(".sidenav a")
+	   .mouseenter(function() {
+			$(this).css({ 'color' : primary_color });
+		})
+		.mouseleave(function() {
+			$(this).css({ 'color' : 'white' });
+		});
+
+		// if menu is shown show close button and primary hover color 
+	   if ($(".sidenav").css('display') == 'none') {
+		$(".navbtn")
+		.mouseenter(function() {
+			$(this).css({ 'color' : primary_color });
+		})
+		.mouseleave(function() {
+			$(this).css({ 'color' : 'white' });
+		});
+	   $(".navbtn").text("×");
+		} else if ($(".sidenav").css('display') == 'block') {
+			$(".navbtn")
+			.mouseenter(function() {
+				$(this).css({ 'color' : secondary_color });
+			})
+			.mouseleave(function() {
+				$(this).css({ 'color' : 'white' });
+			});
+			$(".navbtn").text("☰");
+		}
+	});
+	
+  }
 
   // sidebar toggle function
   $(".navbtn").click(function(){
@@ -129,21 +171,29 @@ $(document).ready(function() {
   $(".color-secondary").css({
     'color' : secondary_color
   });
+  $(".background-color-secondary").css({
+    'background-color' : secondary_color
+  })
   $(".border-secondary").css({
     'border' : border_style
-  });
-  $(".hover-secondary").mouseenter(function() {
+	});
+	$(".hover-secondary").mouseenter(function() {
     $(this).css({
       'color' : secondary_color
     });
   });
-  $(".hover-secondary").mouseleave(function() {
+  $(".hover-primary").mouseenter(function() {
+    $(this).css({
+      'color' : primary_color
+    });
+  });
+  $(".hover-secondary, .hover-primary").mouseleave(function() {
     $(this).css({
       'color' : 'white'
     });
   });
-
   $(".color-tertiary p, .color-tertiary").css({
     'color' : tertiary_color
   });
+
 });

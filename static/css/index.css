@@ -128,6 +128,12 @@ h2, h3 {
 /* device breakpoints */
 
 /* xsmall, small, medium */
+@media screen and (max-width: 599px) {
+  .header {
+    transition-delay: 0.1s;
+  }
+}
+
 @media screen and (max-width: 599px), 
 screen and (max-width: 1023px), 
 screen and (max-width: 1439px) {

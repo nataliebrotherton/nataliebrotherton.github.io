@@ -39,7 +39,7 @@
   transform: scale(1.05);
 }
 
-img.stock:hover {
+#stock:hover img {
   background-color: white;
 }
 
@@ -129,10 +129,35 @@ img.stock:hover {
   .content {
     top: 60px;
     width: 100%;
-    left: 30%;
+  }
+  .project-container {
+    transition: ease-in 0.2;
   }
   .project-container img {
+    margin: 0 0 0 0;
     width: 80%;
+  }
+  .project-container:last-child {
+    padding-bottom: 150px;
+  }
+  .project-container:nth-child(2) .text p:last-child {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .project-container:last-child .text p:last-child {
+    line-height: 15px;
+  }
+  .text {
+    position: relative;
+    display: none;
+    left: 30px;
+    width: 60vw;
+    height: 10vh;
+    transition: ease-in 0.2;
+  }
+  .project-container:hover .text {
+    display: flex;
+    transition: ease-in 0.2;
   }
 
 }
