@@ -37,6 +37,7 @@ $(document).ready(function() {
    (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.platform)) || $(window).width() <= 599) {
 	 $(".header").addClass("scene_element--fadein");
 	 $(".sidenav").addClass("background-color-secondary");
+	 $(".navbtn").removeClass("hover-secondary");
      $(".navbtn").click(function(){
 	   $(".header").toggle();
 
@@ -49,24 +50,12 @@ $(document).ready(function() {
 			$(this).css({ 'color' : 'white' });
 		});
 
+		$(".navbtn").css({ 'color' : 'white' });
+
 		// if menu is shown show close button and primary hover color 
 	   if ($(".sidenav").css('display') == 'none') {
-		$(".navbtn")
-		.mouseenter(function() {
-			$(this).css({ 'color' : primary_color });
-		})
-		.mouseleave(function() {
-			$(this).css({ 'color' : 'white' });
-		});
-	   $(".navbtn").text("×");
+		   $(".navbtn").text("×");
 		} else if ($(".sidenav").css('display') == 'block') {
-			$(".navbtn")
-			.mouseenter(function() {
-				$(this).css({ 'color' : secondary_color });
-			})
-			.mouseleave(function() {
-				$(this).css({ 'color' : 'white' });
-			});
 			$(".navbtn").text("☰");
 		}
 	});
