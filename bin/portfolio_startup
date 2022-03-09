@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# setup database
+export FLASK_ENV=development
+export FLASK_APP=portfolio
+flask run --host 0.0.0.0 --port 8000
