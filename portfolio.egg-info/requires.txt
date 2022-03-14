@@ -1,0 +1,13 @@
+arrow
+bs4
+Flask
+html5validator
+pycodestyle
+pydocstyle
+pylint
+pytest
+pytest-mock
+requests
+psycopg2-binary
+flask-sqlalchemy
+flask-migrate
