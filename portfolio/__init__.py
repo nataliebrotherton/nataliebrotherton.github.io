@@ -6,19 +6,33 @@ from flask_migrate import Migrate
 db = SQLAlchemy()
 migrate = Migrate()
 
-def create_app():
-    app = Flask(__name__)
-    app.config.from_mapping(
-        SECRET_KEY = os.environ.get('SECRET_KEY') or 'dev_key',
-        SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
-            'sqlite:///' + os.path.join(app.instance_path, 'portfolio.sqlite'),
-        SQLALCHEMY_TRACK_MODIFICATIONS = False
-    )
+# def create_app():
+#     app = Flask(__name__)
+#     app.config.from_mapping(
+#         SECRET_KEY = os.environ.get('SECRET_KEY') or 'dev_key',
+#         SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
+#             'sqlite:///' + os.path.join(app.instance_path, 'portfolio.sqlite'),
+#         SQLALCHEMY_TRACK_MODIFICATIONS = False
+#     )
 
-    db.init_app(app)
-    migrate.init_app(app, db)
+#     db.init_app(app)
+#     migrate.init_app(app, db)
 
-    from . import model
-    import portfolio.views
+#     from . import model
+#     import portfolio.views
 
-    return app
+#     return app
+
+app = Flask(__name__)
+app.config.from_mapping(
+    SECRET_KEY = os.environ.get('SECRET_KEY') or 'dev_key',
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
+        'sqlite:///' + os.path.join(app.instance_path, 'portfolio.sqlite'),
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
+)
+
+db.init_app(app)
+migrate.init_app(app, db)
+
+from . import model
+import portfolio.views
