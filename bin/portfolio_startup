@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # setup database
+python portfolio/psql/init_db.py
 export FLASK_ENV=development
 export FLASK_APP=portfolio
 flask run --host 0.0.0.0 --port 8000
