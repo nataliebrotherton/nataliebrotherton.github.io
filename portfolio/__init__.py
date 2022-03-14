@@ -19,5 +19,6 @@ def create_app():
     migrate.init_app(app, db)
 
     from . import model
+    import portfolio.views
 
     return app
