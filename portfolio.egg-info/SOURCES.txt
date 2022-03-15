@@ -1,8 +1,0 @@
-setup.py
-portfolio/__init__.py
-portfolio/model.py
-portfolio.egg-info/PKG-INFO
-portfolio.egg-info/SOURCES.txt
-portfolio.egg-info/dependency_links.txt
-portfolio.egg-info/requires.txt
-portfolio.egg-info/top_level.txt

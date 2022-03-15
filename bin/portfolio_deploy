@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# compile sass
+sass portfolio/static/scss:portfolio/static/css
+
+# update requirements.txt
+pip freeze > requirements.txt
+
+# push to heroku remote
+git push heroku master
