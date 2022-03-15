@@ -1,0 +1,14 @@
+html,
+body {
+  margin: 0px;
+  min-height: 100vh;
+}
+
+.outer-container {
+  min-height: 100vh;
+  background-color: #c6c1b8;
+  border: 15px #defe52 solid;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=base.css.map */
