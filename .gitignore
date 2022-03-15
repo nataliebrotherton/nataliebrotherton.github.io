@@ -6,4 +6,8 @@ __pycache__/
 
 instance/
 
-*egg-info
+*.egg-info*
+
+portfolio/static/scss
+
+*.DS_Store
