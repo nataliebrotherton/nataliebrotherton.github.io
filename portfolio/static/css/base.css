@@ -6,9 +6,35 @@ body {
 
 .outer-container {
   min-height: 100vh;
-  background-color: #c6c1b8;
-  border: 15px #defe52 solid;
+  background-color: #d8deae;
+  border: 15px #ea3340 solid;
   box-sizing: border-box;
+}
+.outer-container .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 15px;
+  left: 0;
+  min-width: 100vw;
+  height: 11vh;
+  border-top: 10px #ea3340 solid;
+}
+.outer-container .menu a {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  color: #ea3340;
+  text-decoration: none;
+  font-size: 8vh;
+}
+.outer-container .menu :first-child {
+  padding-left: 20px;
+}
+.outer-container .menu :last-child {
+  right: 0;
+  padding-right: 20px;
 }
 
 /*# sourceMappingURL=base.css.map */
